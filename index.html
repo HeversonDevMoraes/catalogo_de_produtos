@@ -1,0 +1,203 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos - Planos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .pricing-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .pricing-header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+      color: #1a1a1a;
+    }
+
+    .pricing-header p {
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .pricing-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 32px 24px;
+      width: 100%;
+      max-width: 340px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border: 1px solid #e2e8f0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card.popular {
+      border: 2px solid #25d366;
+    }
+
+    .badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #25d366;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 4px 16px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .card-subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      min-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    .card-price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+    }
+
+    .card-price span {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #666;
+    }
+
+    .features-list {
+      list-style: none;
+      margin-bottom: 32px;
+      flex-grow: 1;
+    }
+
+    .features-list li {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: #4a5568;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .features-list li::before {
+      content: "✓";
+      color: #25d366;
+      font-weight: bold;
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      text-align: center;
+      background-color: #25d366;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 14px 20px;
+      border-radius: 8px;
+      transition: background-color 0.2s;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1da851;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="pricing-header">
+    <h1>Escolha o Plano Ideal para o Seu Negócio</h1>
+    <p>Soluções completas de marketing, automação e inteligência artificial com condições especiais para planos trimestrais.</p>
+  </section>
+
+  <div class="pricing-grid">
+    
+    <!-- Plano Basic -->
+    <div class="card">
+      <h2 class="card-title">Basic</h2>
+      <p class="card-subtitle">Essencial para estruturar sua presença digital.</p>
+      <div class="card-price">R$ 397 <span>/ trimestral</span></div>
+      <ul class="features-list">
+        <li>Configuração e análise do perfil e nicho do Instagram</li>
+        <li>Criativos personalizados com chamada para ação do cliente</li>
+        <li>Landing page com domínio gratuito (chamadas para Instagram e WhatsApp)</li>
+      </ul>
+      <a href="https://wa.me/5541988681747?text=Quero%20o%20plano%20basic" target="_blank" class="btn-whatsapp">Contratar Basic</a>
+    </div>
+
+    <!-- Plano Premium -->
+    <div class="card popular">
+      <span class="badge">Mais Popular</span>
+      <h2 class="card-title">Premium</h2>
+      <p class="card-subtitle">Aceleração com anúncios e automação de vendas.</p>
+      <div class="card-price">R$ 897 <span>/ trimestral</span></div>
+      <ul class="features-list">
+        <li>Tudo do plano Basic, e mais:</li>
+        <li>Landing page com domínio próprio (chamadas para Instagram e WhatsApp)</li>
+        <li>Gestão de Google Ads</li>
+        <li>ManyChat: automação nas chamadas para ação</li>
+      </ul>
+      <a href="https://wa.me/5541988681747?text=Quero%20o%20plano%20premium" target="_blank" class="btn-whatsapp">Contratar Premium</a>
+    </div>
+
+    <!-- Plano Ultra -->
+    <div class="card">
+      <h2 class="card-title">Ultra</h2>
+      <p class="card-subtitle">Escala total com inteligência artificial dedicada.</p>
+      <div class="card-price">R$ 1.497 <span>/ trimestral</span></div>
+      <ul class="features-list">
+        <li>Tudo do plano Premium, e mais:</li>
+        <li>Landing page personalizada com domínio estratégico e e-mail profissional</li>
+        <li>Agente de atendimento com Inteligência Artificial</li>
+      </ul>
+      <a href="https://wa.me/5541988681747?text=Quero%20o%20plano%20ultra" target="_blank" class="btn-whatsapp">Contratar Ultra</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
